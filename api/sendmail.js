@@ -52,5 +52,4 @@ app.post('/sendMail', (req, res) => {
         `
     });
 });
-
 module.exports = app;
