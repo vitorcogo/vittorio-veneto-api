@@ -56,5 +56,7 @@ app.post('/sendMail', (req, res) => {
             <p> Meio de resposta: <b>${req.body.contactWay}</b></p>
         `
     });
+
+    return 200;
 });
 module.exports = app;
