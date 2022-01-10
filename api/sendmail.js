@@ -57,6 +57,6 @@ app.post('/sendMail', (req, res) => {
         `
     });
 
-    return 200;
+    res.sendStatus(200);
 });
 module.exports = app;
