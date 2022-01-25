@@ -6,7 +6,7 @@ const SMTP_CONFIG = require('./config/smtp');
 const app = express();
 
 app.use(function (req, res, next) {
-    const allowedOrigins = ['http://localhost:4200', 'https://vittorio-veneto-api.herokuapp.com'];
+    const allowedOrigins = ['http://localhost:4200', 'https://www.vittorioveneto.com.br'];
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
         res.setHeader('Access-Control-Allow-Origin', origin);
