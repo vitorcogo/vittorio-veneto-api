@@ -42,7 +42,7 @@ app.post('/sendMail', (req, res) => {
     console.log(process.env.PASSWORD_KEY);
 
     transporter.sendMail({
-        from: process.env.USER_KEY,
+        from: req.body.email,
         to: process.env.USER_KEY,
         replyTo: req.body.email,
         subject: "Orçamento Vittorio Veneto",
