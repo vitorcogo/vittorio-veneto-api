@@ -44,6 +44,7 @@ app.post('/sendMail', (req, res) => {
     transporter.sendMail({
         from: req.body.email,
         to: process.env.USER_KEY,
+        cc: 'vitor_cogo@outlook.com',
         replyTo: req.body.email,
         subject: "Orçamento Vittorio Veneto",
         html: `
